@@ -1,0 +1,85 @@
+.trip {
+    margin-top: 130px;
+}
+.trip h2 {
+    margin-bottom: 35px;
+}
+.img-container, .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.img-big, .overlay-big {
+    width: 625px;
+    height: 355px;
+    transition: 0.3s;
+}
+.img-small, .overlay-small {
+    width: 413px;
+    height: 285px;
+    transition: 0.3s;
+}
+.overlay-big, .overlay-small {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(21, 24, 36, 0.4);
+}
+.img-big, .img-small {
+    position: relative;
+    z-index: 1;
+}
+.img-big span, .img-small span {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--main-link-color);
+
+}
+.img-big img, .img-small img, .prefecture-img-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.prefecture {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+.prefecture-img-container {
+    position: relative;
+    width: 600px;
+    height: 355px;
+    z-index: 1;
+}
+.prefecture-content-container, .neighborhood-content-container {
+    width: 520px;
+    padding: 20px;
+}
+.prefecture-content-container h3, .neighborhood-content-container h3 {
+    font-size: 30px;
+}
+.prefecture-content-container p {
+    margin-top: 85px;
+}
+.prefecture-content-container a {
+    margin-top: 58px;
+}
+.neighborhood {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 65px;
+}
+.neighborhood-content-container p {
+    margin-top: 45px;
+}
+.neighborhood-content-container a {
+    margin-top: 95px;
+}
